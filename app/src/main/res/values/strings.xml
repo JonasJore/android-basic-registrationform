@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">Registration Form</string>
+
+    <string-array name="countries">
+        <item>Norway</item>
+        <item>Sweden</item>
+        <item>Denmark</item>
+        <item>Iceland</item>
+        <item>Finland</item>
+        <item>Netherland</item>
+        <item>Ireland</item>
+    </string-array>
+
+    <string name="emailHint">Email</string>
+
+    <string name="invalidEmailText">Email must have a value</string>
+
+    <string name="invalidNameText">Name must have a value</string>
+
+    <string name="invalidPasswordReenterText">Reenter must be the same as password</string>
+
+    <string name="invalidPasswordText">Password must have a value</string>
+
+    <string name="licenseAgreementAgreedCheckBoxText">I Agree</string>
+
+    <string name="nameHint">Name</string>
+
+    <string name="passwordHint">Password</string>
+
+    <string name="reenterPasswordHint">Re-Enter Password</string>
+
+    <string name="registerButtonText">REGISTER</string>
+
+    <string name="registrationFormLicenseAgreement">These is out lisence agreement: You can share this app anywhere that you want and use it however you want. Just remember to enjoy</string>
+
+    <string name="selectCountrySpinnerText">Country:</string>
+
+    <string name="selectFemaleRadio">Female</string>
+
+    <string name="selectGenderText">Gender:</string>
+
+    <string name="selectMaleRadio">Male</string>
+
+    <string name="selectOtherGenderRadio">Other</string>
+</resources>

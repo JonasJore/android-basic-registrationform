@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:id="@+id/mainRelative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp">
+
+            <RelativeLayout
+                android:id="@+id/formTextInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp">
+
+                <TextView
+                    android:id="@+id/txtNameNotValid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/invalidNameText"
+                    android:textColor="@color/redValidationError"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/txtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:ems="10"
+                    android:hint="@string/nameHint"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/txtEmailNotValid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtName"
+                    android:text="@string/invalidEmailText"
+                    android:textColor="@color/redValidationError"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/txtEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtName"
+                    android:layout_marginTop="14dp"
+                    android:ems="10"
+                    android:hint="@string/emailHint"
+                    android:inputType="textEmailAddress" />
+
+                <TextView
+                    android:id="@+id/txtPasswordNotValid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtEmail"
+                    android:text="@string/invalidPasswordText"
+                    android:textColor="@color/redValidationError"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/txtPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtEmail"
+                    android:layout_marginTop="14dp"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:hint="@string/passwordHint"
+                    android:inputType="textPassword" />
+
+                <TextView
+                    android:id="@+id/txtPasswordReenterNotValid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtPassword"
+                    android:text="@string/invalidPasswordReenterText"
+                    android:textColor="@color/redValidationError"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/txtPasswordReenter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtPassword"
+                    android:layout_marginTop="14dp"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:hint="@string/reenterPasswordHint"
+                    android:inputType="textPassword" />
+
+                <TextView
+                    android:id="@+id/radioGroupHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtPasswordReenter"
+                    android:layout_marginTop="14dp"
+                    android:text="@string/selectGenderText" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroupGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/radioGroupHeader"
+                    android:layout_margin="8dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioGroupMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/selectMaleRadio" />
+
+                    <RadioButton
+                        android:id="@+id/radioGroupFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/selectFemaleRadio" />
+
+                    <RadioButton
+                        android:id="@+id/radioGroupOther"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/selectOtherGenderRadio" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/txtCountrySpinnerHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioGroupGender"
+                    android:layout_marginTop="14dp"
+                    android:text="@string/selectCountrySpinnerText" />
+
+                <Spinner
+                    android:id="@+id/txtCountrySpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtCountrySpinnerHeader"
+                    android:layout_margin="8dp"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:entries="@array/countries"
+                    android:spinnerMode="dropdown" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/userAgreementLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="0dp"
+                android:layout_toEndOf="@+id/formTextInput">
+
+                <TextView
+                    android:id="@+id/userAgreement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:padding="8dp"
+                    android:text="@string/registrationFormLicenseAgreement"
+                    android:textStyle="italic" />
+
+                <CheckBox
+                    android:id="@+id/readLicenseAgreement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/userAgreement"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="14dp"
+                    android:text="@string/licenseAgreementAgreedCheckBoxText" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/formTextInput"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/registerButtonText" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
