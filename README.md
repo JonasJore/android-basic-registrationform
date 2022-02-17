@@ -9,4 +9,4 @@ have not learned how that works yet.
 
 ## Screenshot
 
- <img src="./docs/screenshot_early.PNG" alt="screenshot-release-1.0.0" width="300" height="auto"/> 
+ <img src="./docs/screenshot_0.png" alt="screenshot-release-1.0.0" width="300" height="auto"/> 
